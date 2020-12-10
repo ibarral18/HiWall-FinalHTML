@@ -1,255 +1,286 @@
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <style>
-      h1{font-family: Montserrat, font-size: 12px; font-style: normal; font-variant: normal;}
-      body {background-color: white;}
-      .container {
-        width:300px;
-        height:650px;
-        background-color:#E5FAFF;
-        margin: 0px auto;
-      }
-      .middle{
-        box-shadow:0px 4px 4px rgba(108.70789557695389, 81.16615265607834, 218.87500405311584, 0.30000001192092896);
-      	background-color:rgba(255, 255, 255, 1);
-      	opacity:1;
-      	width:280px;
-      	height:320px;
-        margin-left: 10px;
-        margin-top: 20px;
-      	border-top-left-radius:25px;
-      	border-top-right-radius:25px;
-      	border-bottom-left-radius:25px;
-      	border-bottom-right-radius:25px;
-      }
-      .smallermiddle{
-        box-shadow:0px 4px 4px rgba(108.70789557695389, 81.16615265607834, 218.87500405311584, 0.30000001192092896);
-      	background-color:rgba(255, 255, 255, 1);
-      	opacity:1;
-      	width:280px;
-      	height:100px;
-        margin-left: 10px;
-        margin-top: 20px;
-      	border-top-left-radius:25px;
-      	border-top-right-radius:25px;
-      	border-bottom-left-radius:25px;
-      	border-bottom-right-radius:25px;
-      }
-      img{
-        width:100%;
-      }
-      .picturemid{
-        background-color:white;
-        margin-left:90px;
-        width:120px;
-        height:100px;
-        padding-top:10px;
-      }
-      .name{
-        color:rgba(0, 0, 0, 1);
-      	opacity:1;
-      	width:161px;
-      	height:25px;
-      	font-family:Montserrat;
-      	text-align:center;
-        padding-left:65px;
-      	font-size:24px;
-      	letter-spacing:0;
-      }
-      .private{
-        color:rgba(0, 0, 0, 1);
-        opacity:1;
-        width:161px;
-        height:30px;
-        font-family:Montserrat;
-        text-align:center;
-        padding-left:65px;
-        font-size:10px;
-        letter-spacing:0;
-        font-weight:bold;
-      }
 
-      .button1 {
-      	box-shadow:0px 4px 4px rgba(108.70789557695389, 81.16615265607834, 218.87500405311584, 0.30000001192092896);
-      	background-color:rgba(67.00000360608101, 91.00000217556953, 180.00000447034836, 1);
-      	opacity:1;
-      	border:1px solid rgba(245.43749392032623, 252.70499914884567, 255, 1);
-      	width:90px;
-      	height:57px;
-        margin-left:10px;
-        float:left;
-        margin-top:15px;
-      	border-top-left-radius:15px;
-      	border-top-right-radius:15px;
-      	border-bottom-left-radius:15px;
-      	border-bottom-right-radius:15px;
-      }
-      .button2 {
-      	box-shadow:0px 4px 4px rgba(108.70789557695389, 81.16615265607834, 218.87500405311584, 0.30000001192092896);
-      	background-color:rgba(67.00000360608101, 91.00000217556953, 180.00000447034836, 1);
-      	opacity:1;
-      	border:1px solid rgba(245.43749392032623, 252.70499914884567, 255, 1);
-      	width:90px;
-      	height:57px;
-        float:left;
-        margin-left:5px;
-        margin-top:15px;
-      	border-top-left-radius:15px;
-      	border-top-right-radius:15px;
-      	border-bottom-left-radius:15px;
-      	border-bottom-right-radius:15px;
-      }
-      .button3 {
-      	box-shadow:0px 4px 4px rgba(108.70789557695389, 81.16615265607834, 218.87500405311584, 0.30000001192092896);
-      	background-color:rgba(67.00000360608101, 91.00000217556953, 180.00000447034836, 1);
-      	opacity:1;
-      	border:1px solid rgba(245.43749392032623, 252.70499914884567, 255, 1);
-      	width:90px;
-      	height:57px;
-        float:right;
-        margin-top:15px;
-      	border-top-left-radius:15px;
-      	border-top-right-radius:15px;
-      	border-bottom-left-radius:15px;
-      	border-bottom-right-radius:15px;
-      }
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <style>
+    h1 {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-variant: normal;
+    }
 
-      #text_1 {
-      	color:white;
-      	opacity:1;
-        margin-right:250px;
-      	font-family:Montserrat;
-        position:relative;
-        top:10px;
-        left:18px;
-      	text-align:center;
-      	font-size:16px;
-      	letter-spacing:0;
-      	line-height:undefined;
-      }
-      #text_2 {
-      	color:rgba(255, 255, 255, 1);
-      	opacity:1;
-      	font-family:Montserrat;
-      	text-align:center;
-        position:relative;
-        top:10px;
-        left:18px;
-      	font-size:16px;
-      	letter-spacing:0;
-      	line-height:undefined;
-      }
-      #text_3 {
-      	color:rgba(255, 255, 255, 1);
-      	opacity:1;
-      	font-family:Montserrat;
-      	text-align:center;
-      	font-size:16px;
-        position:relative;
-        top:18px;
-      	letter-spacing:0;
-      	line-height:undefined;
-        padding-left:10px;
-      }
-      #text_4 {
-        color:black;
-        opacity:1;
-        font-family:Montserrat;
-        text-align:center;
-        font-size:18px;
-        position:relative;
-        letter-spacing:0;
-        line-height:undefined;
-        padding-left:10px;
-      }
-      #text_5 {
-      	color:black;
-      	opacity:1;
-      	font-family:Montserrat;
-      	text-align:left;
-      	font-size:12px;
-        position:relative;
-        top:6px;
-        left:10px;
-      	letter-spacing:0;
-      	line-height:undefined;
-      }
-      #text_6 {
-        color:black;
-        opacity:1;
-        font-family:Montserrat;
-        font-weight:bold;
-        text-align:left;
-        font-size:12px;
-        position:relative;
-        top:35px;
-        left:60px;
-        letter-spacing:0;
-        line-height:undefined;
-      }
-      #text_7 {
-        color:black;
-        opacity:1;
-        font-family:Montserrat;
-        text-align:left;
-        font-size:12px;
-        position:relative;
-        top:35px;
-        left:60px;
-        letter-spacing:0;
-        line-height:undefined;
-      }
-      #text_8 {
-        color:black;
-        opacity:1;
-        font-family: 'Montserrat', sans-serif;
-        text-align:left;
-        font-size:14px;
-        position:relative;
-        top:5px;
-        left:20px;
-        font-weight:bold;
-        letter-spacing:0;
-        line-height:undefined;
-      }
-      #text_9 {
-        color:black;
-        opacity:1;
-        font-family:Montserrat;
-        text-align:left;
-        font-size:14px;
-        position:relative;
-        top:5px;
-        left:20px;
-        letter-spacing:0;
-        line-height:undefined;
-      }
-    </style>
-  </head>
-  <body>
-    <div class= "container">
-      <A HREF="file:///Users/rosechrin/Desktop/IP/search.html"><img src="/Users/rosechrin/Desktop/IP/images/top.png"></A>
-      <div class= "middle">
-        <div class="picturemid">
-          <img src= "/Users/rosechrin/Desktop/IP/images/julia.png">
-          </div>
-        <div class="name">Julia Smith</div>
-        <div class="private">Private</div>
-        <span id="text_4">About<br></span>
-        <span id="text_5">I like hiking and dogs and cannot wait to <br> meet everyone!<br></span>
-        <span id="text_6">🏠Hometown &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🎓School<br></span>
-        <span id="text_7">Atlanta, Georgia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SEAS</span>
-        </div>
-        <div class="smallermiddle">
-          <span id="text_8">😁Likes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 😔Dislikes<br></span>
-          <span id="text_9">Scary Movies &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chocolate</span>
-        </div>
-        <div class="button1"><span id="text_1">Play Game</span></div>
-        <div class="button2"><span id="text_2">Add to Group</span></div>
-        <div class="button2"><span id="text_3">Message</span></div>
-     </div>
+    body {
+      background-color: white;
+    }
 
-  </body>
+    .container {
+      width: 300px;
+      height: 650px;
+      background-color: #E5FAFF;
+      margin: 0px auto;
+    }
+
+    .middle {
+      box-shadow: 0px 4px 4px rgba(108.70789557695389, 81.16615265607834, 218.87500405311584, 0.30000001192092896);
+      background-color: rgba(255, 255, 255, 1);
+      opacity: 1;
+      width: 280px;
+      height: 320px;
+      margin-left: 10px;
+      margin-top: 20px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+
+    .smallermiddle {
+      box-shadow: 0px 4px 4px rgba(108.70789557695389, 81.16615265607834, 218.87500405311584, 0.30000001192092896);
+      background-color: rgba(255, 255, 255, 1);
+      opacity: 1;
+      width: 280px;
+      height: 100px;
+      margin-left: 10px;
+      margin-top: 20px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .picturemid {
+      background-color: white;
+      margin-left: 90px;
+      width: 120px;
+      height: 100px;
+      padding-top: 10px;
+    }
+
+    .name {
+      color: rgba(0, 0, 0, 1);
+      opacity: 1;
+      width: 161px;
+      height: 25px;
+      font-family: Montserrat;
+      text-align: center;
+      padding-left: 65px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+
+    .private {
+      color: rgba(0, 0, 0, 1);
+      opacity: 1;
+      width: 161px;
+      height: 30px;
+      font-family: Montserrat;
+      text-align: center;
+      padding-left: 65px;
+      font-size: 10px;
+      letter-spacing: 0;
+      font-weight: bold;
+    }
+
+    .button1 {
+      box-shadow: 0px 4px 4px rgba(108.70789557695389, 81.16615265607834, 218.87500405311584, 0.30000001192092896);
+      background-color: rgba(67.00000360608101, 91.00000217556953, 180.00000447034836, 1);
+      opacity: 1;
+      border: 1px solid rgba(245.43749392032623, 252.70499914884567, 255, 1);
+      width: 90px;
+      height: 57px;
+      margin-left: 10px;
+      float: left;
+      margin-top: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    .button2 {
+      box-shadow: 0px 4px 4px rgba(108.70789557695389, 81.16615265607834, 218.87500405311584, 0.30000001192092896);
+      background-color: rgba(67.00000360608101, 91.00000217556953, 180.00000447034836, 1);
+      opacity: 1;
+      border: 1px solid rgba(245.43749392032623, 252.70499914884567, 255, 1);
+      width: 90px;
+      height: 57px;
+      float: left;
+      margin-left: 5px;
+      margin-top: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    .button3 {
+      box-shadow: 0px 4px 4px rgba(108.70789557695389, 81.16615265607834, 218.87500405311584, 0.30000001192092896);
+      background-color: rgba(67.00000360608101, 91.00000217556953, 180.00000447034836, 1);
+      opacity: 1;
+      border: 1px solid rgba(245.43749392032623, 252.70499914884567, 255, 1);
+      width: 90px;
+      height: 57px;
+      float: right;
+      margin-top: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    #text_1 {
+      color: white;
+      opacity: 1;
+      margin-right: 250px;
+      font-family: Montserrat;
+      position: relative;
+      top: 10px;
+      left: 18px;
+      text-align: center;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: undefined;
+    }
+
+    #text_2 {
+      color: rgba(255, 255, 255, 1);
+      opacity: 1;
+      font-family: Montserrat;
+      text-align: center;
+      position: relative;
+      top: 10px;
+      left: 18px;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: undefined;
+    }
+
+    #text_3 {
+      color: rgba(255, 255, 255, 1);
+      opacity: 1;
+      font-family: Montserrat;
+      text-align: center;
+      font-size: 16px;
+      position: relative;
+      top: 18px;
+      letter-spacing: 0;
+      line-height: undefined;
+      padding-left: 10px;
+    }
+
+    #text_4 {
+      color: black;
+      opacity: 1;
+      font-family: Montserrat;
+      text-align: center;
+      font-size: 18px;
+      position: relative;
+      letter-spacing: 0;
+      line-height: undefined;
+      padding-left: 10px;
+    }
+
+    #text_5 {
+      color: black;
+      opacity: 1;
+      font-family: Montserrat;
+      text-align: left;
+      font-size: 12px;
+      position: relative;
+      top: 6px;
+      left: 10px;
+      letter-spacing: 0;
+      line-height: undefined;
+    }
+
+    #text_6 {
+      color: black;
+      opacity: 1;
+      font-family: Montserrat;
+      font-weight: bold;
+      text-align: left;
+      font-size: 12px;
+      position: relative;
+      top: 35px;
+      left: 60px;
+      letter-spacing: 0;
+      line-height: undefined;
+    }
+
+    #text_7 {
+      color: black;
+      opacity: 1;
+      font-family: Montserrat;
+      text-align: left;
+      font-size: 12px;
+      position: relative;
+      top: 35px;
+      left: 60px;
+      letter-spacing: 0;
+      line-height: undefined;
+    }
+
+    #text_8 {
+      color: black;
+      opacity: 1;
+      font-family: 'Montserrat', sans-serif;
+      text-align: left;
+      font-size: 14px;
+      position: relative;
+      top: 5px;
+      left: 20px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: undefined;
+    }
+
+    #text_9 {
+      color: black;
+      opacity: 1;
+      font-family: Montserrat;
+      text-align: left;
+      font-size: 14px;
+      position: relative;
+      top: 5px;
+      left: 20px;
+      letter-spacing: 0;
+      line-height: undefined;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <A HREF="./search.html"><img src="./images/top.png"></A>
+    <div class="middle">
+      <div class="picturemid">
+        <img src="./images/julia.png">
+      </div>
+      <div class="name">Julia Smith</div>
+      <div class="private">Private</div>
+      <span id="text_4">About<br></span>
+      <span id="text_5">I like hiking and dogs and cannot wait to <br> meet everyone!<br></span>
+      <span id="text_6">🏠Hometown &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🎓School<br></span>
+      <span id="text_7">Atlanta, Georgia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SEAS</span>
+    </div>
+    <div class="smallermiddle">
+      <span id="text_8">😁Likes
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        😔Dislikes<br></span>
+      <span id="text_9">Scary Movies &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chocolate</span>
+    </div>
+    <div class="button1"><span id="text_1">Play Game</span></div>
+    <div class="button2"><span id="text_2">Add to Group</span></div>
+    <div class="button2"><span id="text_3">Message</span></div>
+  </div>
+
+</body>
+
 </html>
