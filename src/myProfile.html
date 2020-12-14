@@ -1,15 +1,17 @@
 <html>
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <meta charset="utf-8">
-
   <title>HiWall</title>
   <meta name="description" content="HiWall Profile">
   <meta name="author" content="Ivan Barral, Danielle Cai, Rose Chrin, Sam Landa">
+
+  <!-- importing bootstrap! and fonts -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
   <style>
     h1 {
       font-family: "Montserrat", sans-serif;
@@ -20,21 +22,206 @@
 
     body {
       background-color: white;
+      font-family: "Montserrat", sans-serif;
     }
 
-    .container {
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+    }
+
+    .mobileContainer {
+      display: flex;
+      flex-direction: column;
       width: 375px;
       height: 812px;
       padding: 0px;
       background-color: #E5FAFF;
       margin: 0px auto;
     }
+
+    .navbar {
+      background-color: #FDFDFD;
+      overflow: hidden;
+      margin-top: auto;
+      bottom: 0;
+      width: 100%;
+      padding: 4px 16px;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+    }
+
+    .navbar a.active {
+      filter: hue-rotate(45deg);
+    }
+
+    #header {
+      font-weight: 600;
+      font-size: 22px;
+      color: RGB(67, 91, 180, 1);
+      text-align: center;
+      margin-top: -26px;
+      line-height: 26.82px;
+    }
+
+    .blurb {
+      background-color: white;
+      margin-right: 8px;
+      margin-left: 8px;
+      margin-bottom: 13px;
+      border-radius: 25px;
+      max-width: 100%;
+    }
+
+    .mainBlurb {
+      height: 400px;
+      margin-top: 10px;
+    }
+
+    .sideBlurb {
+      height: 100px;
+      padding-left: 6px;
+      padding-top: 13.5px;
+    }
+
+    .settings {
+      margin-top: 15px;
+      margin-left: 15px;
+      float: left;
+    }
+
+    .edit {
+      margin-top: 15px;
+      margin-right: 15px;
+      float: right;
+    }
+
+    .profPic {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    .trophy {
+      margin-left: 2px;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      margin-bottom: 0px;
+      display: inline;
+    }
+
+    .pronouns {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      text-align: center;
+      margin-top: -4px;
+    }
+
+    .blurbText {
+      max-width: 100%;
+      margin: 19px 18px;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .columns {
+      text-align: center;
+    }
+
+    .colHead {
+      font-weight: bold;
+      margin-bottom: 0px;
+    }
+
+    .colText {
+      margin-bottom: 0px;
+    }
   </style>
 </head>
 
+<!-- to change active nav, just add class="active" to the "a" -->
+
 <body>
-  <div class="container">
+  <div class="mobileContainer">
     <img src="../images/top.svg" alt="topDressing">
+    <h1 id="header">My Profile</h1>
+    <div class="blurb mainBlurb">
+      <a href="#" class="settings"><img src="../images/gear.svg" alt="settings" /></a>
+      <a href="#" class="edit"><img src="../images/edit.svg" alt="edit" /></a>
+      <div class="profPic"><img src="../images/rose.svg" alt="rose's profile" /></div>
+      <div class="nameHolder text-center">
+        <h1 class="name">Rose Chrin</h1>
+        <a href="#"><img class="trophy" src="../images/trophy.svg" alt="trophy icon" /></a>
+      </div>
+      <p class="pronouns">she/her/hers</p>
+      <p class="blurbText">Hi! My name is Rose and I am so excited to be starting at Columbia! I love Game of Thrones
+        and eating S’mores. </p>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-auto columns">
+            <p class="colHead">🏠Hometown</p>
+            <p class="colText">Summit, NJ</p>
+          </div>
+          <div class="col columns">
+            <p class="colHead">🎓School</p>
+            <p class="colText">SEAS</p>
+          </div>
+          <div class="col columns">
+            <p class="colHead">📚Major</p>
+            <p class="colText">CompSci</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blurb sideBlurb">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="colHead">😁Likes</p>
+            <p class="colText">Hiking</p>
+            <p class="colText">Cooking</p>
+            <p class="colText">Game of Thrones</p>
+          </div>
+          <div class="col">
+            <p class="colHead">😔Dislikes</p>
+            <p class="colText">Waking up early</p>
+            <p class="colText">Rain</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blurb sideBlurb">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="colHead">🏢Top Dorms</p>
+            <p class="colText">1) Carman</p>
+            <p class="colText">2) John Jay</p>
+            <p class="colText">3) Wallach</p>
+          </div>
+          <div class="col">
+            <p class="colHead">🤝Roommate</p>
+            <p class="colText">Looking for a roommate!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="navbar">
+      <a href="#"><img src="../images/chat.svg" alt="chat button"></a>
+      <a href="#"><img src="../images/explore.svg" alt="explore button"></a>
+      <a href="#" class="active"><img src="../images/profile.svg" alt="profile button"></a>
+    </div>
 
 
 
