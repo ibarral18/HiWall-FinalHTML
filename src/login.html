@@ -1,0 +1,193 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HiWall</title>
+    <meta name="description" content="HiWall Profile">
+    <meta name="author" content="Ivan Barral, Danielle Cai, Rose Chrin, Sam Landa">
+
+    <!-- importing bootstrap! and fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-variant: normal;
+        }
+
+        body {
+            background-color: white;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 375px;
+            height: 812px;
+            padding: 0px;
+            background-color: #E5FAFF;
+            margin: 0px auto;
+        }
+
+        .welcome {
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 34px;
+            text-align: center;
+
+            color: #000000;
+        }
+
+        .hiwall {
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 50px;
+            line-height: 61px;
+            text-align: center;
+            color: #000000;
+            padding-left: 30;
+        }
+
+        info {
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(109, 81, 219, 0.3);
+            border-radius: 8px;
+            width: 253px;
+            height: 43px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding-left: 20;
+            padding-top: 10;
+        }
+
+        infotext {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+
+            color: rgba(0, 0, 0, 0.35);
+        }
+
+        loginbutton {
+            width: 170px;
+            height: 63px;
+            background: #435BB4;
+            border: 1px solid #324DAA;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(109, 81, 219, 0.3);
+            border-radius: 8px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding-top: 15;
+        }
+
+        logintext {
+            width: 111px;
+            height: 18px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+
+        signup {
+            width: 218px;
+            height: 31px;
+
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+
+            color: #78C0F5;
+        }
+
+        new {
+            width: 282px;
+            height: 14px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+
+            color: #696969;
+        }
+
+        .sign {
+            text-align: center;
+            padding-top: 10;
+        }
+    </style>
+</head>
+
+<!-- to change active nav, just add class="active" to the "a" -->
+
+<body>
+    <div class="container">
+        <img src="../images/topLogin.svg" alt="topDressing">
+
+        <div class="welcome">Welcome to</div>
+        <div class="hiwall">
+            HiWall
+            <img src="../images/wave.png" width=53 height=43>
+        </div>
+        <br />
+
+        <info>
+            <infotext>
+                CUID
+            </infotext>
+        </info>
+        <br />
+        <info>
+            <infotext>
+                Password
+            </infotext>
+        </info>
+        <br /><br />
+        <loginbutton>
+            <a href="../src/explore.html">
+                <logintext>Login</logintext>
+            </a>
+        </loginbutton>
+        <div class="sign">
+            <new>NEW HERE? </new>
+            <a href="../src/signup.html">
+                <signup>Sign Up</signup>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
