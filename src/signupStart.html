@@ -1,0 +1,225 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HiWall</title>
+  <meta name="description" content="HiWall Profile">
+  <meta name="author" content="Ivan Barral, Danielle Cai, Rose Chrin, Sam Landa">
+
+  <!-- importing bootstrap! and fonts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-variant: normal;
+    }
+
+    body {
+      background-color: white;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+      height: 812px;
+      padding: 0px;
+      background-color: #E5FAFF;
+      margin: 0px auto;
+    }
+    .image{
+        text-align: left;
+        padding-left: 15;
+        position: absolute;
+        top: 15;
+    }
+
+    welcome {
+        font-weight: bolder;
+        text-align: center;
+        font-family: Montserrat;
+        font-style: normal;
+        line-height: 34px;
+        font-size: 28px;
+        color: #000000;
+        margin-top:-15px;
+    }
+    create{
+        font-weight:100;
+        text-align: center;
+        font-family: Montserrat;
+        font-style: normal;
+        line-height: 34px;
+        font-size: 28px;
+        color: #000000;
+        width: 183px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .ellipse{
+        width: 93px;
+        height: 87.82px;
+        background: #FFFFFF;
+        border-radius:50%;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top: 18;
+        padding-left: 6;
+        margin-bottom:10;
+        margin-top:8;
+    }
+    text1{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        padding-left:25;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.3);
+    }
+    text{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+    
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    box1{
+        width: 312px;
+        height: 39px;
+        text-align: center;
+        background: #FFFFFF;
+        border-radius: 7px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top:10;
+        margin-bottom:10;
+    }
+    box2{
+        width: 312px;
+        height: 84px;
+        background: #FFFFFF;
+        border-radius: 7px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top:30;
+        margin-bottom:10;
+        text-align: center;
+    }
+    arrow{
+        float:right;
+        padding-right:10;
+        padding-top:5px;
+    }
+    box3{
+        width: 96px;
+        height: 39px;
+        text-align: center;
+        padding-top:16;
+        padding-left:60;
+        background: #FFFFFF;
+        border-radius: 7px;
+        margin-bottom:10;
+        margin-left:250px;
+    }
+    roommate{
+        height: 20px;
+        margin-top:10;
+        margin-bottom:-30;
+        padding-left:35;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        color: #000000;
+    }
+    progressbar{
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:20px;
+        margin-bottom:10px;
+    }
+    next{
+        width: 82.24px;
+        height: 32px;
+        text-align:center;
+        background: #8F43B4;
+        border-radius: 25px;
+        padding-top:3;
+        padding-right:3;
+        margin-left:270px;
+    }
+    nexttext{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: medium;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    
+
+   
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="../images/top.svg" alt="topDressing">
+    <div class ="image"><a href="../src/login.html"><img src="../images/back.svg" alt="backarrow"></a></div>
+
+    <welcome>
+        Welcome!
+    </welcome>
+    <create>
+        Let's create your profile.
+    </create>
+    <div class="ellipse">
+            <img src="../images/camera.svg" alt="ellipse" >
+    </div>
+    <box1><text>First Name</text></box1>
+    <box1><text>Last Name</text></box1>
+    <box1><text1>Pronouns</text1><arrow><img src="../images/downarrow.svg" alt="downArrow"></arrow></box1>
+    <box2><text>About Me</text></box2>
+    <box1><text1>School</text1><arrow><img src="../images/downarrow.svg" alt="downArrow"></arrow></box1>
+    <box1><text1>Academic Interest</text1><arrow><img src="../images/downarrow.svg" alt="downArrow"></arrow></box1>
+    <box1><text1>Hometown</text1><arrow><img src="../images/downarrow.svg" alt="downArrow"></arrow></box1>
+    
+    
+    <roommate>Looking for Roommate?</roommate>
+    <box3><img src="../images/downarrow.svg" alt="downArrow"></box3>
+    
+    <progressbar><img src ="../images/progressbar33.svg" alt="progress"></progressbar>
+    
+    <next><a class="next" href="signupMid.html"><nexttext>Next</nexttext></a>
+    
+    </next>
+  </div>
+
+</body>
+
+</html>
