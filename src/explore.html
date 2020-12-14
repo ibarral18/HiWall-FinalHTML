@@ -67,28 +67,298 @@
       line-height: 26.82px;
     }
 
-    .search {}
+    .search {
+      border-radius: 10px;
+      width: 270px;
+      height: 30px;
+      margin: 30px auto;
+      margin-bottom: 21px;
+      background-color: white;
+    }
+
+    .search img {
+      margin-left: 22px;
+      margin-top: -4px;
+      margin-right: 4px;
+
+    }
+
+    .search input {
+      border: none;
+      outline: none !important;
+      padding-top: 4px;
+
+    }
+
+    .search input.focus {
+      outline: none !important;
+    }
+
+    .suggestions {
+      width: 63px;
+      height: 24px;
+      background-color: white;
+      margin-right: 8px;
+      border-radius: 5px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.35);
+      font-size: 12px;
+      padding-top: 4px;
+      cursor: pointer;
+    }
+
+    .suggesContain {
+      margin: 0px auto;
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .suggesProf {
+      height: 210px;
+      width: 179px;
+      border-radius: 10px;
+      background-color: white;
+      text-align: center;
+    }
+
+    .suggesLeft {
+      margin-right: 5px;
+    }
+
+    .contMargins {
+      padding: 0px;
+    }
+
+    .rowMargins {
+      width: fit-content;
+      margin: 0px auto;
+    }
+
+    .profName {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 2px;
+      color: black;
+    }
+
+    .blurbText {
+      font-size: 10px;
+      margin-bottom: 0px;
+    }
+
+    .profImg {
+      margin-top: 13px;
+      margin-bottom: 12px;
+    }
+
+    .schoolMar {
+      margin-top: 10px;
+    }
+
+    .sendChat {
+      font-size: 12px;
+      display: inline;
+      /* margin-top: 16px; */
+      margin-bottom: 0px;
+    }
+
+    .chatimg {
+      display: flex;
+      margin-top: 16px;
+      margin-bottom: 6px;
+      width: fit-content;
+      color: rgba(0, 0, 0, 1)
+    }
+
+    .brandImg {
+      margin-top: 15px;
+      margin-bottom: 14.5px;
+      margin-left: -16px;
+    }
+
+    .clock {
+      float: left;
+      margin-top: 8px;
+      margin-left: 5px;
+    }
+
+    .groups {
+      margin-top: 28px;
+      width: 363px;
+      height: 262px;
+      background-color: white;
+      border-radius: 10px;
+      text-align: center;
+      padding-top: 8px;
+    }
+
+    .groupCol {
+      width: 102px;
+      height: 85px;
+      border-radius: 10px;
+      border: 1px solid #E5E5E5;
+      background: #FAFAFA;
+      padding: 0px;
+    }
+
+    .groupColRight {
+      margin-right: 11px;
+    }
+
+    .groupRow {
+      width: fit-content
+    }
+
+    .groupText {
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 13px;
+    }
+
+    .pat {
+      margin-top: 9px;
+      margin-bottom: 11px;
+    }
+
+    .nina {
+      margin-top: 8px;
+      margin-bottom: 5.72px;
+    }
+
+    .ben {
+      margin-top: 10px;
+      margin-bottom: 7.35px;
+    }
+
+    .george {
+      margin-top: 9px;
+      margin-bottom: 4px;
+    }
+
+    .chris {
+      margin-top: 12px;
+      margin-bottom: 8.5px;
+    }
+
+    .groupColRighter {
+      margin-right: 15px;
+    }
+
+    .bottomGroup {
+      margin-top: 11px;
+      margin-bottom: 16px;
+    }
+
+    .join {
+      font-weight: 700;
+      font-size: 12px;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+
+    .recText {
+      margin-bottom: 11px;
+    }
   </style>
 </head>
 
 <!-- to change active nav, just add class="active" to the "a" -->
 
 <body>
-  <div class="container">
+  <div class="mobileContainer">
     <img src="../images/top.svg" alt="topDressing">
     <h1 id="header">Explore</h1>
     <div class="search">
+      <img src="../images/search.svg" alt="search icon" />
+      <input placeholder="Search..." type="text" />
+    </div>
+    <div class="suggesContain">
+      <div class="suggestions">
+        SEAS
+      </div>
+      <div class="suggestions">
+        summit
+      </div>
+      <div class="suggestions">
+        hiking
+      </div>
+      <div class="suggestions">
+        pizza
+      </div>
+      <div class="suggestions">
+        dogs
+      </div>
+    </div>
+    <div class='container contMargins '>
+      <div class="row rowMargins ">
+        <div class="col-auto suggesLeft suggesProf">
+          <a href="juliaProfile.html">
+            <img class="profImg" src="../images/juliaPlain.svg" alt="Julia Smith picture" />
+            <h1 class="profName">Julia Smith</h1>
+          </a>
+          <p class="blurbText">You both <span class="font-weight-bolder">like:</span></p>
+          <p class="blurbText">Hiking, Chocolate</p>
+          <p class="blurbText schoolMar"><span class="font-weight-bolder">School:</span> SEAS</p>
+          <a class="chatimg mx-auto" href="juliaChat1.html">
+            <img class="" src="../images/smallChat.svg" alt="small chat icon" />
+            <p class="sendChat">Send Chat</p>
+          </a>
+        </div>
 
+        <div class="col-auto suggesProf">
+          <p class="clock">⏳</p>
+          <img class="brandImg" src="../images/smallBrand.svg" alt="Brandon Jones picture" />
+          <h1 class="profName">Brandon Jones</h1>
+          <p class="blurbText">You both <span class="font-weight-bolder">dislike:</span></p>
+          <p class="blurbText">Cooking</p>
+          <p class="blurbText schoolMar"><span class="font-weight-bolder">Hometown:</span> Summit, NJ</p>
+          <a class="chatimg mx-auto" href="#">
+            <img class="" src="../images/smallChat.svg" alt="small chat icon" />
+            <p class="sendChat">Send Chat</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="groups mx-auto">
+      <p class="recText"> <span class="font-italic">Recommended Group:</span> Exploring</p>
+      <div class="container">
+        <div class="row mx-auto groupRow ">
+          <div class="col-auto groupCol groupColRight">
+            <img class="pat" src="../images/patExplore.svg" alt="patricia profile picture">
+            <p class="groupText">Patricia Roberts</p>
+          </div>
+          <div class="col-auto groupCol groupColRight">
+            <img class="nina" src="../images/ninaExplore.svg" alt="nina profile picture">
+            <p class="groupText">Nina Tofern</p>
+          </div>
+          <div class="col-auto groupCol ">
+            <img class="ben" src="../images/benExplore.svg" alt="ben profile picture">
+            <p class="groupText">Ben Frank</p>
+          </div>
+        </div>
+        <div class="row mx-auto groupRow bottomGroup">
+          <div class="col-auto groupCol groupColRighter">
+            <img class="george" src="../images/georgeExplore.svg" alt="patricia profile picture">
+            <p class="groupText">George Blue</p>
+          </div>
+          <div class="col-auto groupCol  ">
+            <img class="chris" src="../images/chrisExplore.svg" alt="patricia profile picture">
+            <p class="groupText">Chris Martinez</p>
+          </div>
+        </div>
+
+      </div>
+      <p class="join">Join Group Now</p>
     </div>
 
 
 
 
-
     <div class="navbar">
-      <a href="#"><img src="../images/chat.svg" alt="chat button"></a>
-      <a href="#" class="active"><img src="../images/explore.svg" alt="explore button"></a>
-      <a href="#"><img src="../images/profile.svg" alt="profile button"></a>
+      <a href="chat.html"><img src="../images/chat.svg" alt="chat button"></a>
+      <a href="explore.html" class="active"><img src="../images/explore.svg" alt="explore button"></a>
+      <a href="myProfile.html"><img src="../images/profile.svg" alt="profile button"></a>
     </div>
 
 
