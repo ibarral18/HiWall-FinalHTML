@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HiWall</title>
+  <meta name="description" content="HiWall Profile">
+  <meta name="author" content="Ivan Barral, Danielle Cai, Rose Chrin, Sam Landa">
+
+  <!-- importing bootstrap! and fonts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-variant: normal;
+    }
+
+    body {
+      background-color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+      height: 812px;
+      padding: 0px;
+      background-color: #E5FAFF;
+      margin: 0px auto;
+    }
+
+    .navbar {
+      background-color: #FDFDFD;
+      overflow: hidden;
+      margin-top: auto;
+      bottom: 0;
+      width: 100%;
+      padding: 4px 16px;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+    }
+
+    .navbar a.active {
+      filter: hue-rotate(45deg);
+    }
+  </style>
+</head>
+
+<!-- to change active nav, just add class="active" to the "a" -->
+
+<body>
+  <div class="container">
+    <img src="../images/top.svg" alt="topDressing">
+    <div class="navbar">
+      <a href="#"><img src="../images/chat.svg" alt="chat button"></a>
+      <a href="#"><img src="../images/explore.svg" alt="explore button"></a>
+      <a href="#" class="active"><img src="../images/profile.svg" alt="profile button"></a>
+    </div>
+
+
+
+
+  </div>
+
+</body>
+
+</html>
