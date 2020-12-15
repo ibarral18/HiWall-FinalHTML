@@ -2,19 +2,19 @@
 
 
 ## TODO:
-* Login (Danielle)
-* Sign up Start (Danielle)
+* ~~Login (Danielle)~~
+* ~~Sign up Start (Danielle)~~
 * Sign up Mid (Rose)
-* Sign up Mid2 (Danielle)
-* Sign up Final (Danielle)
+* ~~Sign up Mid2 (Danielle)~~
+* ~~Sign up Final (Danielle)~~
 * Chat (Sam)
 * Julia Chat 1 (Sam)
 * Julia Chat 2 (Sam)
 * Julia Chat 3 (Sam)
-* Explore (Ivan)
-* Julia Profile (Ivan)
+* ~~Explore (Ivan)~~
+* ~~Julia Profile (Ivan)~~
 * My Profile (Ivan)
-* Profile Filters (Danielle)
+* ~~Profile Filters (Danielle)~~
 * Trophies (Rose)
 * Settings (Rose)
 
@@ -30,6 +30,6 @@ If using a Mac:
 6. run "git commit -m "insert your message here, ex. I added the chats page"
 7. run "git push"
 8. Your changes should be reflected in the github repo master now!
-9. Make sure to run "git pull" occassionally to ensure your branch is up to date with master
+9. Make sure to run "git pull" to ensure your branch is up to date with master
 
 ## Note: Commit your changes regularly AND before editing each time, run "git pull" to update your local branch with the most recent version of master
