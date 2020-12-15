@@ -13,7 +13,7 @@
 * Julia Chat 3 (Sam)
 * ~~Explore (Ivan)~~
 * ~~Julia Profile (Ivan)~~
-* My Profile (Ivan)
+* ~~My Profile (Ivan)~~
 * ~~Profile Filters (Danielle)~~
 * Trophies (Rose)
 * Settings (Rose)
