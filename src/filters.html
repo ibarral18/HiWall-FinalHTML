@@ -1,0 +1,239 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HiWall</title>
+  <meta name="description" content="HiWall Profile">
+  <meta name="author" content="Ivan Barral, Danielle Cai, Rose Chrin, Sam Landa">
+
+  <!-- importing bootstrap! and fonts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-variant: normal;
+    }
+
+    body {
+      background-color: white;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+      height: 812px;
+      padding: 0px;
+      background-color: #E5FAFF;
+      margin: 0px auto;
+    }
+
+    .navbar {
+      background-color: #FDFDFD;
+      overflow: hidden;
+      margin-top: auto;
+      bottom: 0;
+      width: 100%;
+      padding: 4px 16px;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+    }
+
+    .navbar a.active {
+      filter: hue-rotate(45deg);
+    }
+    .image{
+        text-align: left;
+        padding-left: 35;
+        position: absolute;
+        top: 65;
+        z-index:2;
+    }
+
+    add{
+        width: 130px;
+        height: 32px;
+        text-align:center;
+        background: #8F43B4;
+        border-radius: 25px;
+        padding-top:3;
+        padding-right:3;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:5px;
+        margin-top:10px;
+    }
+    addtext{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        padding-left:5px;
+    }
+
+    .whitebox{
+        display:flex;
+        flex-direction: column;
+        width: 339px;
+        height: 710px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:-50px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 25px;
+        padding-top:10px;
+        z-index:1;
+    }
+    bluetext{
+        width: 296.6px;
+        height: 20.27px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left:18px;
+        color: #435BB4;
+    }
+    greytext{
+        width: 119.38px;
+        height: 29.91px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #9A9A9A;
+    }
+    box{
+        width: 311.3px;
+        height: 33.33px;
+        background: #FFFFFF;
+        border: 0.5px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 7px;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:-15px;
+        margin-bottom:15px;
+        padding-left: 15px;
+        padding-top:5px;
+    }
+    plus{
+        padding-left:170px;
+    }
+    plus1{
+        padding-left:10px;
+    }
+    schoolyr{
+        display:flex;
+        flex-direction: row;
+        margin-bottom:10px;
+    }
+    smallbox{
+        width: 135.71px;
+        height: 37.83px;
+        padding-top:5px;
+        padding-left:5px;
+        background: #FFFFFF;
+        border: 0.5px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 7px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    check{
+        padding-left:25px;
+    }
+    blueheader{
+        text-align:center;
+      
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 24px;
+        color: #435BB4;
+        padding-bottom:20px;
+        padding-top:10px;
+    }
+    pad{
+        padding-top:8px;
+    }
+    
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="../images/top.svg" alt="topDressing">
+
+
+    <div class ="image"><a href="../src/settings.html"><blueheader>X</blueheader></a></div>
+
+    <div class="whitebox">
+        <blueheader>Match Filters</blueheader>
+        <bluetext>Number of Matches</bluetext>
+        <br/>
+        <box><greytext>Add Filter</greytext><plus><img src="../images/plus.svg" alt="plus"></plus></box>
+        <bluetext>Matching Frequency</bluetext>
+        <br/>
+        <box><greytext>Add Filter</greytext><plus><img src="../images/plus.svg" alt="plus"></plus></box>
+        <bluetext>Their Hobbies</bluetext>
+        <br/>
+        <box><greytext>Add Filter</greytext><plus><img src="../images/plus.svg" alt="plus"></plus></box>
+        <bluetext>Their Dislikes</bluetext>
+        <br/>
+        <box><greytext>Add Filter</greytext><plus><img src="../images/plus.svg" alt="plus"></plus></box>
+        <bluetext>Their Academic Interests</bluetext>
+        <br/>
+        <box><greytext>Add Filter</greytext><plus><img src="../images/plus.svg" alt="plus"></plus></box>
+        <bluetext>Their Major</bluetext>
+        <br/>
+        <box><greytext>Add Filter</greytext><plus><img src="../images/plus.svg" alt="plus"></plus></box>
+        <schoolyr>
+            <bluetext>Their Year</bluetext>  
+            <bluetext>Their School</bluetext>  
+        </schoolyr>
+        <schoolyr>
+            <smallbox><greytext>Add Filter</greytext><plus1><img src="../images/plus.svg" alt="plus"></plus1></smallbox>
+            <smallbox><greytext>Add Filter</greytext><plus1><img src="../images/plus.svg" alt="plus"></plus1></smallbox>
+        </schoolyr>
+        <pad></pad>
+        <bluetext>Looking for Roommates<check><img src="../images/checkmark.svg"></check></bluetext>
+        <pad></pad>
+        <add><a class="add" href="settings.html"><addtext>Add Filters</addtext></a><add>
+    
+    </div>
+    <div class="navbar">
+        <a href="chat.html"><img src="../images/chat.svg" alt="chat button"></a>
+        <a href="explore.html"><img src="../images/explore.svg" alt="explore button"></a>
+        <a href="myProfile.html" class="active"><img src="../images/profile.svg" alt="profile button"></a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
