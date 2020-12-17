@@ -34,7 +34,7 @@
       display: flex;
       flex-direction: column;
       width: 375px;
-      height: 812px;
+      height: 1175px;
       padding: 0px;
       background-color: #E5FAFF;
       margin: 0px auto;
@@ -183,13 +183,14 @@
     }
 
     .groups {
-      margin-top: 28px;
+      margin-top: 4px;
       width: 363px;
       height: 262px;
       background-color: white;
       border-radius: 10px;
       text-align: center;
       padding-top: 8px;
+      margin-bottom: 40px;
     }
 
     .groupCol {
@@ -258,6 +259,23 @@
 
     .recText {
       margin-bottom: 11px;
+      text-align: center;
+    }
+
+    .dots {
+      margin-top: 4px;
+    }
+
+    .profImgRe {
+      margin-top: 15px;
+      margin-bottom: 14.5px;
+      margin-left: -20px;
+    }
+
+    .wave {
+      float: left;
+      margin-top: 8px;
+      /* margin-left: 5px; */
     }
   </style>
 </head>
@@ -289,6 +307,9 @@
         dogs
       </div>
     </div>
+    <p class="recText font-weight-bold">
+      <span class="font-italic">New </span>Recommendations:
+    </p>
     <div class='container contMargins '>
       <div class="row rowMargins ">
         <div class="col-auto suggesLeft suggesProf">
@@ -319,6 +340,7 @@
         </div>
       </div>
     </div>
+    <img class="dots" src="../images/dots.svg" alt="swipable dots">
 
     <div class="groups mx-auto">
       <p class="recText"> <span class="font-italic">Recommended Group:</span> Exploring</p>
@@ -351,7 +373,40 @@
       </div>
       <p class="join">Join Group Now</p>
     </div>
+    <p class="recText font-weight-bold">
+      <span class="font-italic">Reconnect </span>with old matches:
+    </p>
 
+    <div class='container contMargins '>
+      <div class="row rowMargins ">
+        <div class="col-auto suggesLeft suggesProf">
+          <img src="../images/hand.svg" alt="Hand Wave" class="wave" />
+          <img class="profImgRe" src="../images/sarahExplore.svg" alt="Sarah Jones picture" />
+          <h1 class="profName">Sarah Jones</h1>
+          <p class="blurbText">You both <span class="font-weight-bolder">like:</span></p>
+          <p class="blurbText">The Sopranos, Reading</p>
+          <p class="blurbText schoolMar"><span class="font-weight-bolder">School:</span> CC</p>
+          <a class="chatimg mx-auto" href="#">
+            <img class="" src="../images/smallChat.svg" alt="small chat icon" />
+            <p class="sendChat">Send Chat</p>
+          </a>
+        </div>
+
+        <div class="col-auto suggesProf">
+          <img src="../images/hand.svg" alt="Hand Wave" class="wave" />
+          <img class="profImgRe" src="../images/davidExplore.svg" alt="David Riche picture" />
+          <h1 class="profName">David Riche</h1>
+          <p class="blurbText">You both <span class="font-weight-bolder">dislike:</span></p>
+          <p class="blurbText">Rainy days</p>
+          <p class="blurbText schoolMar"><span class="font-weight-bolder">Hometown:</span> Miami, FL</p>
+          <a class="chatimg mx-auto" href="#">
+            <img class="" src="../images/smallChat.svg" alt="small chat icon" />
+            <p class="sendChat">Send Chat</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <img class="dots" src="../images/dots.svg" alt="swipable dots">
 
 
 
