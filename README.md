@@ -4,7 +4,7 @@
 
 - ~~Login (Danielle)~~
 - ~~Sign up Start (Danielle)~~
-- Sign up Mid (Rose)
+- ~~Sign up Mid (Rose)~~
 - ~~Sign up Mid2 (Danielle)~~
 - ~~Sign up Final (Danielle)~~
 - Chat (Sam)
