@@ -1,0 +1,230 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HiWall</title>
+  <meta name="description" content="HiWall Profile">
+  <meta name="author" content="Ivan Barral, Danielle Cai, Rose Chrin, Sam Landa">
+
+  <!-- importing bootstrap! and fonts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-variant: normal;
+    }
+
+    body {
+      background-color: white;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+    }
+    .chatTitleText {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      padding-left: 35px;
+      margin-right: auto;
+      margin-left:auto;
+    }
+    .mobileContainer {
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+      height: 812px;
+      padding: 0px;
+      background-color: #E5FAFF;
+      margin: 0px auto;
+    }
+
+    .navbar {
+      background-color: #FDFDFD;
+      overflow: hidden;
+      margin-top: auto;
+      bottom: 0;
+      width: 100%;
+      padding: 4px 16px;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+    }
+
+    .navbar a.active {
+      filter: hue-rotate(45deg);
+    }
+
+    .blurb {
+      background-color: white;
+      margin-right: 8px;
+      margin-left: 8px;
+      margin-bottom: 12px;
+      border-radius: 25px;
+      max-width: 100%;
+      height: 128 px;
+      padding: 5px 10px 5px 8px;
+    }
+    .blurbBlue {
+      background-color: #d0ecf8;      
+      margin-right: 8px;
+      margin-left: 8px;
+      margin-bottom: 13px;
+      border-radius: 25px;
+      max-width: 100%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      text-align:center;
+    }
+    .blurbPurple {
+      background-color: #8F43B4;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -15px;
+      padding: 10px 80px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      text-align: center
+      height: 45px;      
+    }
+    .messagePreview {
+        font-size: 13px;
+        font-weight: lighter;
+        margin-top: 4px;
+        
+    }
+    #reminder{
+      font-size: 13px;
+      font-weight: lighter;
+      margin-top: -5px;
+    }
+    #headBar {
+      text-align: center;
+      min-height: 50px;
+    }
+    #header {
+      font-weight: 600;
+      font-size: 22px;
+      color: RGB(67, 91, 180, 1);
+      display: inline-block;
+      text-align: center;
+      margin-top: 8px;
+      margin-left: 46px;
+      line-height: 26.82px;
+    }
+    .chatInfo {
+      min-height: 80%;
+      min-height: 65px;
+      float:right;
+      width:79%;
+      padding: 5px 10px 5px 10px;
+      font-family: "Montserrat", sans-serif;
+    }
+    #startNew {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding-top:26px;
+    font-weight: 100;
+    }
+    #explore {
+      display: inline-block;
+      text-align: center;
+      color: white;
+      font-weight: 900;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<!-- to change active nav, just add class="active" to the "a" -->
+
+<body>
+  <div class="mobileContainer">
+    <img src="../images/top.svg" alt="topDressing">
+    <div id="headBar">    
+        <div id="header">Chat</div>
+        <span><img style="padding: 10px; float: right;" src="../images/newChat.svg" alt="newChat"></span>
+    </div>
+    <div class="blurbBlue">
+      <span class="chatTitleText">2 chat requests</span>
+      <span><img style="padding: 10px; float: right;" src="../images/rightArrow.svg" alt="newChat"></span>
+    </div>
+    <div class="blurb">
+
+      <img stlye="float:left" src="../images/juliaPlain.svg" alt="juliaProfilePic">
+      <div class="chatInfo">
+        <div>
+          <span style="font-size: 18px">Julia Smith</span>
+          <span style="float:right; font-size: 13px;">3:30PM</span>
+        </div>
+        <div class="messagePreview">
+          <span style="font-size: 13px">Hey what's up! Are you looking for a...</span>
+        </div>
+      </div>
+    </div>
+    <div class="blurb">
+      <img src="../images/brandon.svg" alt="brandonProfilePic">
+      <div class="chatInfo">
+        <div>
+          <span style="font-size: 18px">Brandon Jones</span>
+          <span style="float:right; font-size: 13px;">1:26PM</span>
+        </div>
+        <div class="messagePreview">
+          <span>You're also from NJ? OMG...</span>
+          <img style="float: right" src="../images/halfHand.svg" alt="halfEmptyHand">
+        </div>
+      </div>
+    </div>
+    <div class="blurb">
+      <img src="../images/njGang.svg" alt="newJerseyGangPic">
+      <div class="chatInfo">
+        <div>
+          <span style="font-size: 18px">New Jersey Gang :)</span>
+          <span style="float:right; font-size: 13px;">9:02AM</span>
+        </div>
+        <div class="messagePreview">
+          <span>I have to fill my own gas tank in NY :)</span>
+        </div>
+      </div>
+    </div>
+    <div class="blurb">
+      <img src="../images/patricia.svg" alt="patriciaProfilePic">
+      <div class="chatInfo">
+        <div>
+          <span style="font-size: 18px">Patricia Roberts</span>
+          <span style="float:right; font-size: 13px;">Friday</span>
+        </div>
+        <div id="reminder">
+          <img style="float: right" src="../images/emptyHand.svg" alt="emptyHand">
+          <span style="font-weight: 900; color: #435BB4;">It's been a while!</span>
+          <span style="color: #435BB4">You both<br> like: Game of Thrones...</span>
+        </div>
+      </div>
+    </div>
+    <div id="startNew">Start a Conversation!</div>
+    <br>
+
+    <a class="blurbPurple" href="../src/explore.html">
+        <span id="explore">Explore</span>
+    </a>
+
+    <div class="navbar">
+      <a href="chat.html" class="active"><img src="../images/chat.svg" alt="chat button"></a>
+      <a href="explore.html"><img src="../images/explore.svg" alt="explore button"></a>
+      <a href="myProfile.html"><img src="../images/profile.svg" alt="profile button"></a>
+    </div>
+  </div>
+</body>
+</html>
