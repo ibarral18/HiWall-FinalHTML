@@ -7,7 +7,7 @@
 - ~~Sign up Mid (Rose)~~
 - ~~Sign up Mid2 (Danielle)~~
 - ~~Sign up Final (Danielle)~~
-- Chat (Sam)
+- ~~Chat (Sam)~~
 - Julia Chat 1 (Sam)
 - Julia Chat 2 (Sam)
 - Julia Chat 3 (Sam)
