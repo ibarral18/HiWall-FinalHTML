@@ -15,7 +15,7 @@
 - ~~Julia Profile (Ivan)~~
 - ~~My Profile (Ivan)~~
 - ~~Profile Filters (Danielle)~~
-- Trophies (Rose)
+- ~~Trophies (Rose)~~
 - ~~Settings (Rose)~~
 
 ## How to make changes:
