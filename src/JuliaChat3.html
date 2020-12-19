@@ -1,0 +1,285 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HiWall</title>
+  <meta name="description" content="HiWall Profile">
+  <meta name="author" content="Ivan Barral, Danielle Cai, Rose Chrin, Sam Landa">
+
+  <!-- importing bootstrap! and fonts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-variant: normal;
+    }
+
+    body {
+      background-color: white;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+    }
+
+    .mobileContainer {
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+      height: 812px;
+      padding: 0px;
+      background-color: #E5FAFF;
+      margin: 0px auto;
+      filter: blur(1px);
+    }
+    .bubble {
+      background-color: white;
+      margin-right: 8px;
+      margin-left: 48px;
+      margin-bottom: 8px;
+      border-radius: 50px;
+      max-width: 231px;
+      box-shadow: 0px 4px 4px rgba(109, 81, 219, 0.3);
+      font-size: 18px;
+      padding: 12px;
+    }
+    .bubbleBlue {
+      float: right;
+      background-color: #435BB4;
+      margin-left: 8px;
+      margin-right: 12px;
+      margin-top: 10px;
+      border-radius: 50px;
+      max-width: 231px;
+      box-shadow: 0px 4px 4px rgba(109, 81, 219, 0.3);
+      font-size: 18px;
+      color: white;
+      padding: 12px;
+    }
+
+    #keyboard {
+      overflow: hidden;
+      margin-top: auto;
+      bottom: 0;
+      width: 100%;
+    }
+    .blurb {
+      background-color: white;
+      margin: 4px 8px;
+      border-radius: 25px;
+      width: 359px;
+      height: 86px;
+      padding: 5px 10px 5px 8px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+    }
+    .blurbBlue {
+      background-color: #D0ECF7;
+      border-radius: 25px;
+      height: 31px;
+      padding: 5px 10px 5px 8px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+    }
+    #back {
+      float:left;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    #juliaProfile {
+      font-size: 16px;
+      color: black;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    #juliaProfilePic {
+      margin-left: auto;
+      margin-right: auto;
+      height: 70%;
+      width: 70%;
+      padding-left: 15px;
+    }
+    #lock {
+      float: right;
+      margin-top: -36px;
+    }
+    #chatContainer {
+     margin-top: 12px;
+    }
+    #bubblePic {
+      float: left;
+      height: 12%;
+      margin-top: 70px;
+      margin-left: 10px;
+    }
+    img.heart {
+      float: right;
+      margin-top: -40px;
+      margin-right: 12px; 
+    }
+    #liked {
+      margin-top: -70px;
+    }
+    #smallBubble {
+      width: 144px;
+
+    }
+    #userMessage {
+      margin-left: 10px;
+    }
+    #textLine {
+      position: relative;
+      width: 354px;
+      height: 37px;
+      left: 10px;
+      top: 76px;
+    }
+    #textBox {
+      background: #FFFFFF;
+      width: 269px;
+      height: 31px;
+      left: 10px;
+      top: 469px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 25px;
+    }
+    #getIcebreaker {
+      width: 44px;
+      height: 31px;
+      left: 235px;
+      top: 469px;
+      float: right;
+      background: #D0ECF7;
+      border-radius: 25px;
+      text-align: center;
+      padding-top: 6px;
+    }
+    #typeMessage {
+      color: #A6A6A6;
+      text-align: center;
+      font-size: 18px;
+      margin-left: 18px;
+    }
+    #send {
+      color: white;
+      background: #435BB4;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 25px;
+      position: absolute;
+      width: 78px;
+      height: 35px;
+      left: 274px;
+      top: -2px;
+      font-weight: 600;
+      font-size: 14px;
+      padding-left: 21px;
+      padding-top: 6px;
+    }
+    #popup {
+      width: 326px;
+      height: 120px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -630px;
+      background: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 25px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    #prompt {
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 15px;
+      text-align: center;  
+      margin-top: 24px; 
+    }
+    button.ynButton {
+      width: 89px;
+      height: 31px;
+      background: #D0ECF7;
+      border-radius: 25px;
+      border: none;
+    }
+    #yes {
+      margin-left: 64px;
+    }
+    #no {
+      margin-left:20px;
+    }
+  </style>
+</head>
+
+<!-- to change active nav, just add class="active" to the "a" -->
+
+<body>
+  <div class="mobileContainer">
+    <img src="../images/top.svg" alt="topDressing">
+    <div class="blurb">
+      <a id="back">
+        <img  src="../images/backBlue.svg" alt="back"> 
+      </a>
+      <a id="juliaProfile">
+        <img id="juliaProfilePic" src="../images/juliaPlain.svg">
+        <div>Julia Smith</div>
+      </a>
+      <img id ="lock" src="../images/lock.svg" alt="privateLock">
+    </div> 
+    <div id="chatContainer">
+      <div>
+      <div class="bubble" id="smallBubble">
+      <div>Hi! I'm Julia!</div>
+      </div>
+      <img class="heart" src="../images/heartGrey.svg" alt="unlikedHeart">
+      </div>
+      <div>
+      <img id="bubblePic" src="../images/juliaPlain.svg" alt="juliaProfilePic">
+      <div class="bubble">
+        <div> I saw that you like scary movies too!! What's your favorite?</div>
+      </div>
+      <img id="liked" class="heart" src="../images/heartRed.svg" alt="likedHeart">
+      </div>
+      <div class="bubbleBlue">
+        <div id="userMessage">Hmm... I think I'd have to say A Quiet Place. Hbu?</div>
+      </div>
+    </div>
+    
+    <div id="textLine">
+      <div id="textBox">
+        <span id="typeMessage">Type a message. . .</span>
+        <div id="getIcebreaker">
+          <p>&#129398</p>
+        </div>
+      </div>
+      <span id="send">Send</span>
+    </div>
+     
+     <div id="keyboard">
+      <img src="../images/keyboard.svg" alt="iPhoneKeyboard">
+    </div>
+  </div>
+
+  <div id="popup">
+    <p id="prompt">Are you sure you want to share<br>your full profile with Julia Smith?</p>
+    <div>
+        <a href="./juliaChat1.html">
+        <button class="ynButton" id="yes">YES</button>
+        </a>
+        <a href="./juliaChat1.html">
+        <button class="ynButton" id="no">NO</button> 
+        </a>
+  </div>
+
+</body>
+
+</html>
