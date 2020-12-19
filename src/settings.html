@@ -1,0 +1,281 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HiWall</title>
+  <meta name="description" content="HiWall Profile">
+  <meta name="author" content="Ivan Barral, Danielle Cai, Rose Chrin, Sam Landa">
+
+  <!-- importing bootstrap! and fonts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-variant: normal;
+    }
+
+    body {
+      background-color: white;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+      height: 812px;
+      padding: 0px;
+      background-color: #E5FAFF;
+      margin: 0px auto;
+    }
+    .image{
+        text-align: left;
+        padding-left: 15;
+        position: absolute;
+        top: 15;
+    }
+
+    .navbar {
+      background-color: #FDFDFD;
+      overflow: hidden;
+      margin-top: auto;
+      bottom: 0;
+      width: 100%;
+      padding: 4px 16px;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+    }
+
+    .navbar a.active {
+      filter: hue-rotate(45deg);
+    }
+
+    introtext{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 32px;
+        line-height: 38px;
+        color: #435BB4;
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: -30px;
+    }
+
+    top{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 38px;
+      color: #435BB4;
+      margin-left:22px;
+    }
+    select{
+        width: 119.38px;
+        height: 29.91px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #9A9A9A;
+    }
+    plus{
+        padding-left:160px;
+    }
+
+    .sections{
+        display:flex;
+        flex-direction: column;
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:10px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 25px;
+        padding-top:10px;
+    }
+    titletext{
+        width: 296.6px;
+        height: 20.27px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-left:18px;
+        color: #435BB4;
+    }
+    lighttext{
+        width: 119.38px;
+        height: 29.91px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #9A9A9A;
+    }
+    box{
+        width: 311.3px;
+        height: 33.33px;
+        background: #FFFFFF;
+        border: 0.5px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 7px;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:-15px;
+        margin-bottom:12px;
+        padding-left: 15px;
+        padding-top:5px;
+    }
+    box2{
+        width: 311.3px;
+        background: #FFFFFF;
+        margin-right:auto;
+        margin-left:auto;
+        height:45px;
+        margin-top:-15px;
+        padding-bottom:12px;
+        padding-left: 15px;
+        padding-top:5px;
+    }
+    box3{
+        width: 311.3px;
+        background: #FFFFFF;
+        margin-right:auto;
+        margin-left:auto;
+        height:55px;
+        margin-top:-15px;
+        padding-bottom:12px;
+        padding-left: 15px;
+        padding-top:5px;
+    }
+    secondtext{
+      width: 119.38px;
+      height: 29.91px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
+      color: #435BB4;
+      padding-left: 40px;
+    }
+    off{
+      margin-left:55px;
+      margin-top:-20px;
+    }
+    on1{
+      margin-left:40px;
+      margin-top:-20px;
+    }
+    off2{
+      margin-left:45px;
+      margin-top:-20px;
+    }
+    public{
+      margin-left:87px;
+      margin-top:-30px;
+      margin-bottom:10px;
+    }
+    publicmatches{
+      margin-left:50px;
+      margin-top:-20px;
+    }
+    private1{
+      margin-left:57px;
+      margin-top:-20px;
+    }
+    private2{
+      margin-left:80px;
+      margin-top:-20px;
+    }
+    private3{
+      margin-left:43px;
+      margin-top:-20px;
+    }
+    bluearrow{
+      margin-left:10px;
+    }
+    save{
+        width:100px;
+        height: 27px;
+        text-align:center;
+        background: #8F43B4;
+        border-radius: 25px;
+        margin-top:8px;
+        padding-right:3;
+        margin-left:155px;
+        align-content:center;
+    }
+    savetext{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: medium;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="../images/top.svg" alt="topDressing">
+    <div class ="image"><a href="../src/myProfile.html"><img src="../images/back.svg" alt="backarrow"></a></div>
+    <introtext>Settings</introtext>
+    <div class="sections">
+        <titletext>Match Filters</titletext>
+        <br/>
+        <box><lighttext>Select Filters</lighttext><plus><img src="../images/plus.svg" alt="plus"></plus></box>
+    </div>
+    <div class="sections">
+        <titletext>Notifications</titletext>
+        <br/>
+        <box2><secondtext>New Chat</secondtext><off><img src="../images/off.svg" alt="off"></off></box2>
+        <box2><secondtext>New Match</secondtext><on1><img src="../images/on.svg" alt="on"></on1></box2>
+        <box2><secondtext>Reminders</secondtext><off2><img src="../images/off.svg" alt="on"></off2></box2>
+    </div>
+    <div class="sections">
+        <bluetext>Privacy and Display</bluetext>
+        <br/>
+        <box3><secondtext>Name</secondtext><public><img src="../images/public.svg" alt="plus"></public></box3>
+        <box3><secondtext>Nickname</secondtext><publicmatches><img src="../images/publicmatches.svg" alt="publicmatches"></publicmatches></box3>
+        <box3><secondtext>Pronouns</secondtext><private1><img src="../images/private.svg" alt="private"></private1></box3>
+        <box3><secondtext>Picture</secondtext><private2><img src="../images/private.svg" alt="private"></private2></box3>
+        <box3><secondtext>Hometown</secondtext><private3><img src="../images/private.svg" alt="private"></private3></box3>
+    </div>
+    <div class="sections">
+        <titletext>My Trophies</titletext>
+        <br/>
+        <box2><bluearrow><img src="../images/bluearrow.svg" alt="bluearrow"></bluearrow><titletext>See my Trophies</titletext></box2>
+    </div>
+    <save><savetext>Save</savetext></save>
+    <div class="navbar">
+      <a href="chat.html"><img src="../images/chat.svg" alt="chat button"></a>
+      <a href="explore.html" class="active"><img src="../images/explore.svg" alt="explore button"></a>
+      <a href="myProfile.html"><img src="../images/profile.svg" alt="profile button"></a>
+    </div>
+  </div>
+</body>
+
+</html>
